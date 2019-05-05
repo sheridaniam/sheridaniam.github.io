@@ -1,0 +1,424 @@
+@media (max-width: 1200px) {
+  .title {
+    font-size: 64px;
+    letter-spacing: 3.52px;
+  }
+   .header {
+     background-position: center;
+   }
+   .logoblock {
+     margin-bottom: 168px;
+   }
+   .title--left {
+     margin-left: 74px;
+     z-index: 19
+   }
+   .title--right {
+     justify-content: center;
+     margin-left: 182px;
+     margin-bottom: 165px;
+   }
+   .line {
+     z-index: 1;
+     left: 60px;
+     top: -122px;
+   }
+   .title768 {
+     position: relative;
+     z-index: 20;
+     line-height: 70px;
+   }
+   .nav {
+     justify-content: space-around;
+     margin-bottom: 100px;
+   }
+   .nav_link {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-left: 0;
+   }
+   .button--one {
+     margin-right: 29px;
+   }
+   .downloads {
+     padding-bottom: 95px;
+   }
+  .player {
+    width: 497px;
+    height: 699px;
+    background-size: contain;
+    left: -162px;
+    top: 57px;
+  }
+  .player-line1, .player-line2 {
+    display: none;
+  }
+  .items {
+    flex-basis: 62%;
+  }
+  .name {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .subname {
+    margin: 33px 0 24px 0;
+  }
+  .text {
+    margin-bottom: 9px;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+  .secondline {
+    padding: 0 0 17px 0;
+  }
+  .thirdline {
+    padding: 0px 0 15px 0;
+  }
+  .player2 {
+    background-size: contain;
+    width: 690px;
+    height: 565px;
+    right: -261px;
+    top: 0;
+  }
+  .container.left {
+    padding-left: 31px;
+  }
+  .wrap-for-player {
+    overflow: hidden;
+  }
+  .second{
+    padding: 28px 0 45px 0;
+  }
+  .fourthline {
+    padding: 13px 0 30px 0;
+  }
+  .card {
+    display: block;
+  }
+  .card_image {
+    min-height: 584px;
+  }
+  .container-half {
+    padding: 40px 34px 28px 34px;
+  }
+  .card_text {
+    max-width: 100%;
+    min-height: 85px;
+  }
+  .card_square {
+    width: 116px;
+    height: 116px;
+    top: -80px;
+    left: auto;
+  }
+  .reverse .container-half{
+    padding: 40px 34px 28px 34px;
+  }
+  .reverse .card_square {
+    right: auto;
+  }
+  .reverse .card_content{
+    display: block;
+  }
+  .cardlast .container-half {
+    padding-bottom: 56px;
+  }
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title--index {
+    font-size: 80px;
+  }
+  .footer_topic {
+    text-align: center;
+  }
+  .footer {
+    padding-top: 128px;
+    background-position: center;
+  }
+  .cub {
+    margin-bottom: 58px;
+  }
+  .undername {
+    line-height: 50px;
+  }
+  .footer--downloads {
+    padding-top: 185px;
+    margin-bottom: 35px;
+  }
+  .footerlogo {
+    display: none;
+  }
+  .footer--contacts {
+    display: none;
+  }
+  .footer_logoblock {
+    justify-content: center;
+    padding: 30px;
+  }
+  .soc {
+    margin: 15px;
+  }
+  .footerline1 {
+    left: 8px;
+    top: -9px;
+  }
+  .footerline2 {
+    right: 104px;
+    top: -84px;
+  }
+  .player-line1--768 {
+    display: block;
+  }
+  .player-line2--768 {
+    display: block;
+  }
+}
+/*-------------------------------------------------------------------------768*/
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 13px 0 13px;
+  }
+  .link {
+    display: none;
+  }
+  .logoblock {
+    padding-top: 39px;
+    margin-bottom: 117px;
+    justify-content: center;
+  }
+  .logo {
+    width: 137px;
+    height: 24px;
+  }
+  .title {
+    font-size: 32px;
+    letter-spacing: 1.76px;
+  }
+  .title--left {
+    justify-content: flex-start;
+    margin-left: 2px;
+  }
+  .title--left .title {
+    line-height: 63px;
+  }
+  .title--right {
+    justify-content: flex-start;
+    margin-left: 46px;
+    margin-bottom: 106px;
+  }
+  .title768 {
+    line-height: 40px;
+  }
+  .line {
+    width: 142px;
+    height: 176px;
+  }
+  .button {
+    font-size: 8px;
+    letter-spacing: 0.4px;
+    border-radius: 20px;
+  }
+  .button_text {
+    line-height: 12px;
+  }
+  .button:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none;
+  }
+  .button--one {
+    margin-right: 8px;
+  }
+  .icon-apple {
+    width: 17px;
+    height: 19px;
+    top: 9px;
+    left: 19px;
+  }
+  .icon-google {
+    width: 17px;
+    height: 19px;
+    left: 25px;
+    top: 10px;
+  }
+  .button--one .text_top {
+    padding: 8px 17px 0 45px;
+  }
+  .button--one .text_bottom {
+    padding: 0px 0px 7px 45px;
+  }
+  .button--two .text_top {
+    padding: 8px 0px 0 56px;
+  }
+  .button--two .text_bottom {
+    padding: 0px 28px 7px 56px;
+  }
+  .name {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 10px 10px 0 19px;
+    padding-bottom: 250px;
+  }
+  .player-1-320 {
+    background-image: url("images/footballer320.png");
+    background-repeat: no-repeat;
+    width: 211px;
+    height: 281px;
+    position: absolute;
+    top: 71px;
+    left: 57px;
+  }
+  .wrap320--name {
+    display: block;
+    position: relative;
+  }
+  .subname {
+    font-size: 28px;
+    line-height: 34.49px;
+    letter-spacing: 1.4px;
+    margin-top: 67px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+  }
+  .number {
+    font-size: 14px;
+  }
+  .wrap320--fotorama {
+    background-color: #f5f4f9;
+    display: block;
+  }
+  .slaid {
+    padding: 0 15px 0 15px;
+  }
+  .wrap-for-player {
+    display: none;
+  }
+  .player-2-320 {
+    background-image: url("images/player2320.png");
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 250px;
+    position: absolute;
+    top: 88px;
+  }
+  .name02 {
+    padding-bottom: 230px;
+  }
+  .wrap--order {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    order: 2;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .downloads {
+    order: 1;
+    padding-bottom: 40px;
+  }
+  .nav_link {
+    font-size: 12px;
+    margin: 0 8px 0 8px;
+    line-height: 20.49px;
+  }
+  .nav_link:hover {
+    border: none;
+  }
+  .card .card_content .name {
+    font-size: 28px;
+    line-height: 34.49px;
+    margin: 1px 0 1px 0;
+    padding-bottom: 0
+  }
+  .card_text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .wrap320--fotorama .fotorama__dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #d8d8d8;
+  }
+  .wrap320--fotorama .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #5c3caf;
+  }
+  .wrap320--fotorama .fotorama__wrap {
+    padding-bottom: 20px;
+  }
+  .card_square {
+    width: 70px;
+    height: 70px;
+    top: -57px;
+    left: 20px;
+  }
+  .card_number {
+    font-size: 14px;
+  }
+  .card_image {
+    min-height: 351px;
+  }
+  .container-half {
+    padding: 31px 15px 41px 18px;
+  }
+  .cardlast .container-half {
+    padding-bottom: 41px;
+  }
+  .reverse .container-half {
+    padding: 31px 15px 41px 18px;
+  }
+  .footer {
+    padding-top: 97px;
+  }
+  .cub {
+    width: 73px;
+    height: 78px;
+    background-size: 59px 49px;
+    border-radius: 15px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .undername {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .title--index {
+    line-height: normal;
+  }
+  .footer--downloads {
+    padding-top: 70px;
+  }
+  .soc-img {
+    width: 18px;
+    height: 18px;
+  }
+  .footer_logoblock {
+    padding: 14px;
+  }
+  .footerline-svg-long {
+    width: 95px;
+    height: 121px;
+  }
+  .footerline-svg-short {
+    width: 58px;
+    height: 67px;
+  }
+  .footerline2 {
+    right: 50px;
+    top: -35px;
+  }
+  .footerline1 {
+    left: -1px;
+    top: -4px;
+  }
+}
