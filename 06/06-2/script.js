@@ -1,4 +1,3 @@
-    
 var userAge = prompt("Сколько вам лет?");
 if(userAge % 10 == 1 && userAge != 11) {
   alert("Вам " + userAge + " год!");
