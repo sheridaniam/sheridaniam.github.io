@@ -6,5 +6,5 @@ var e;
 
 
 alert( a || c && b || d ); // 2
-alert( e  || c && b &&  d ); //  null
-alert( e  /*ЛО */  c /*ЛО */ b /*ЛО */ e /*ЛО */ d); // 7
+alert( e || c && b &&  d ); //  null
+alert( e || c || b || e || d); // 7
