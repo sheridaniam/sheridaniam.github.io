@@ -1,8 +1,8 @@
-var name = prompt("Введите ваше имя");
-if (name === 'Денис') {
-    alert( 'Добрый день, учитель' );
-} else if (name === 'Алиса' || name === 'Иван' || name === 'Анастасия' || name ==='Андрей') { /*есть  способ эту строчку короче написать? через name===(a||b||c) не работает */
-    alert( 'Привет, одногрупник' );
+var userAge = prompt("Сколько вам лет?");
+if(userAge % 10 == 1 && userAge != 11) {
+  alert("Вам " + userAge + " год!")
+} else if ((userAge % 10 == 2 || userAge % 10 == 3 || userAge % 10 == 4) && userAge != 12 && userAge != 13 && userAge != 14 ) {
+  alert("Вам " + userAge + " года!");
 } else {
-    alert( 'Ты не из нашей песочницы!' );
+  alert("Вам " + userAge + " лет!")
 }
