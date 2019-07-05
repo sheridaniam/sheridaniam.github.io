@@ -9,8 +9,8 @@ alert (userNumber +" в степени " + degreeOfNumber + " равняется
 
 
 //while
-var userNumber = +prompt("Введите число");  // 2
-var degreeOfNumber = +prompt("Введите степень числа");  //6
+var userNumber = +prompt("Введите число");  
+var degreeOfNumber = +prompt("Введите степень числа"); 
 var result= 1;
 var i=0;
 while (i < degreeOfNumber) {
