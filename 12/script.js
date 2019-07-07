@@ -8,7 +8,7 @@ var doMath = function (x, znak, y){
      alert(x + y);
   }
   if (znak === "-") {
-    alert(x- y);
+    alert(x - y);
   }
   if (znak === "*") {
     alert(x * y);
