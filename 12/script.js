@@ -5,19 +5,19 @@ console.log(firstNumber, mathOperation, secondNumber);
 
 var doMath = function (x, znak, y){
   if (znak === "+") {
-     return x + y;
+     alert(x + y);
   }
   if (znak === "-") {
-    return x- y;
+    alert(x- y);
   }
   if (znak === "*") {
-    return x * y;
+    alert(x * y);
   }
   if (znak === "/") {
-    return x / y;
+    alert(x / y);
   }
   if (znak === "%") {
-    return x % y;
+    alert(x % y);
   }
 }
  doMath(firstNumber, mathOperation, secondNumber );
