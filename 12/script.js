@@ -37,6 +37,8 @@ console.log(firstNumber, mathOperation, secondNumber);
     case "%":
         alert(x % y);
         break;
+    default:
+        alert("Недопустмый знак, введите +, - , *, /, или %")
   }
  }
  doMath(firstNumber, mathOperation, secondNumber );
