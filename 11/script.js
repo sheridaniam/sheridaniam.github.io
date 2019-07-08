@@ -16,15 +16,19 @@ someFunction(randomNumber);
 
 var randomNumber = +prompt("Введите натуральное число");
 
-var someFunctionR = function(x) {        //делить до единицы натолкнул какой-то пример в описании рекурсии, я б сама не дошла до этого :((
-  var result = x / 2;
-  if (result===1) {
+var someFunctionRecurs = function(x) { //делить до единицы натолкнул какой-то пример в описании рекурсии, я б сама не дошла до этого :((
+  if(x === 1) {
     alert("YES");
-  } else if (result < 1) {
-    alert("NO");
   } else {
-  someFunction(result);
-  }
+      var result = x / 2;
+      if (result===1) {
+        alert("YES");
+      } else if (result < 1) {
+        alert("NO");
+      } else {
+        someFunctionRecurs(result);
+      }
+   }
 }
 
-someFunctionR(randomNumber);
+someFunctionRecurs(randomNumber);
