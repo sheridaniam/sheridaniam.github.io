@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 13</title>
+  </head>
+  <body>
+    <script>
+      var fullName = prompt("Введите ваше Ф.И.О.");
+      function f (x) {
+        var arrayFullName= x.split(" ");
+        for (var i = 0; i < arrayFullName.length; i++) {
+          arrayFullName[i]= arrayFullName[i].toLowerCase();
+          arrayFullName[i]= arrayFullName[i].charAt(0).toUpperCase() + arrayFullName[i].slice(1);
+        }
+        alert(arrayFullName.join(" "));
+      }
+      
+      f(fullName);
+    </script>
+  </body>
+</html>
 
