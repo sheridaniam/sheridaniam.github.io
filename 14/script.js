@@ -1,76 +1,62 @@
-/*Найти сумму и количество положительных элементов.
-Найти минимальный элемент массива.
-Найти максимальный элемент массива.
-Определить количество отрицательных элементов.
+/*Найти сумму и количество положительных элементов. 
+Найти минимальный элемент массива. 
+Найти максимальный элемент массива. 
+Определить количество отрицательных элементов. 
 Найти количество нечетных положительных элементов.
-Найти количество четных положительных элементов.
-Найти сумму четных положительных элементов.
-Найти сумму нечетных положительных элементов.
+Найти количество четных положительных элементов. 
+Найти сумму четных положительных элементов. 
+Найти сумму нечетных положительных элементов. 
 Найти определить количество элементов, равных 4.*/
 
 var myArray =  [16,-37,54,-4,72,-56,47,4,-16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47,];
 
 var sum = 0;
-var kolichpol =0;
+var countpositiveNumbers =0;
+var minElement = 0;
+var maxElement = 0;
+var countNegativElements = 0;
+var oddPositivElements = 0;
+var evenPositivElements = 0;
+var sumEvenPositive = 0;
+var sumOddPositive = 0;
+var countFourElements = 0;
 for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] > 0) {
-    sum += myArray[i];
-    kolichpol++;
+    sum += myArray[i];    //Найти сумму и количество положительных элементов.
+    countpositiveNumbers++;
   }
-}
-
-var min = 0;
-for (var i = 0; i < myArray.length; i++) {
-  if (myArray[i] < min) {
-    min = myArray[i];
+  if (myArray[i] < minElement) {
+    minElement = myArray[i];  //Найти минимальный элемент массива.
   }
-}
-
-var max = 0;
-for (var i = 0; i < myArray.length; i++) {
-  if (myArray[i] > max) {
-    max = myArray[i];
+  if (myArray[i] > maxElement) {
+    maxElement = myArray[i];  //Найти максимальный элемент массива.
   }
-}
-
-var countMinus = 0;
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] < 0) {
-    countMinus++ ;
+    countNegativElements++ ;  //Определить количество отрицательных элементов.
   }
-}
-
-var oddPositive = 0;
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] > 0 && myArray[i] % 2 != 0) {
-    oddPositive++ ;
+    oddPositivElements++ ; //Найти количество нечетных положительных элементов.
   }
-}
-
-var evenPositive = 0;
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] > 0 && myArray[i] % 2 == 0) {
-    evenPositive++ ;
+    evenPositivElements++ ;  //Найти количество четных положительных элементов.
   }
-}
-
-var summevenPositive = 0;  // четное
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] > 0 && myArray[i] % 2 == 0) {
-    summevenPositive += myArray[i];
+    sumEvenPositive += myArray[i];  //Найти сумму четных положительных элементов.
   }
-}
-
-var summoddPositive = 0; //не четное
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] > 0 && myArray[i] % 2 != 0) {
-    summoddPositive+= myArray[i] ;
+    sumOddPositive+= myArray[i] ;  //Найти сумму нечетных положительных элементов.
   }
-}
-
-var four = 0;
-for (var i = 0; i < myArray.length; i++) {
   if (myArray[i] == 4){
-    four++;
+    countFourElements++;   //Найти определить количество элементов, равных 4.
   }
+
 }
+console.log("Сумма положительных элементов = " + sum + ", количество положительных элементов = " +countpositiveNumbers );
+console.log("Минимальный элемент массива = " + minElement );
+console.log("Максимальный элемент массива = " + maxElement );
+console.log("Количество отрицательных элементов = " + countNegativElements );
+console.log("Количество нечетных положительных элементов = " + oddPositivElements );
+console.log("Количество четных положительных элементов = " + evenPositivElements );
+console.log("Сумма четных положительных элементов = " + sumEvenPositive );
+console.log("Сумма нечетных положительных элементов = " + sumOddPositive );
+console.log("Количество элементов, равных 4. = " + countFourElements );
