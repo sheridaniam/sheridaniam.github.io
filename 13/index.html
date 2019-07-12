@@ -11,7 +11,7 @@
         var arrayFullName= x.split(" ");
         for (var i = 0; i < arrayFullName.length; i++) {
           arrayFullName[i]= arrayFullName[i].toLowerCase();
-          arrayFullName[i]= arrayFullName[i].charAt(0).toUpperCase() + arrayFullName[i].slice(1);
+          arrayFullName[i]= arrayFullName[i][0].toUpperCase() + arrayFullName[i].slice(1);
         }
         alert(arrayFullName.join(" "));
       }
