@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document 14</title>
+</head>
+<body>
+    <script>
+      function getNumberOfEven (x) {
+        x= String(x);
+        var count= 0;
+        for (var i = 0; i < x.length; i++) 
+        if (x[i] % 2 == 0) 
+        count++;
+        alert(count);
+      }
+
+      getNumberOfEven(223344) // 4
+      getNumberOfEven(111) // 0
+      getNumberOfEven(123456) // 3
+      getNumberOfEven(97531) // 0
+      getNumberOfEven(8642) // 4
+      getNumberOfEven(24688642) // 8
+    </script>
+</body>
+</html>
