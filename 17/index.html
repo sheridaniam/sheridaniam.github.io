@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 16</title>
+  </head>
+  <body>
+    <script>
+      var objArray = [];
+        objArray[0]= {
+          name: "Tom",
+          gender: "male",
+          year: "2012"
+        }
+        objArray[1]= {
+          name: "Jerry",
+          gender: "male",
+          year: "2000"
+        }
+        objArray[2]= {
+          name: "Ariel",
+          gender: "female",
+          year: "1993"
+        }
+        objArray[3]= {
+          name: "Aurora",
+          gender: "female",
+          year: "1998"
+        }
+        objArray[4]= {
+          name: "Shrek",
+          gender: "male",
+          year: "2001"
+        }
+        objArray[5]= {
+          name: "Aladdin",
+          gender: "male",
+          year: "1993"
+        }
+
+        var countMale= 0;
+        var countFemale = 0;
+        var ages = 0;
+        var currentYear = new Date().getFullYear()
+
+        for(var i= 0; i < objArray.length; i++) {
+          ages += +objArray[i].year;
+          var midage = currentYear - (ages/objArray.length);
+            if(objArray[i].gender == "male") {
+            countMale++ ;
+          } else {
+            countFemale++ ;
+          }
+        }
+
+        console.log(countMale > countFemale ? "Больше мужчин" : "Больше женщин" );
+        console.log("Средний возраст - " +midage+ " лет");
+    </script>
+  </body>
+</html>
