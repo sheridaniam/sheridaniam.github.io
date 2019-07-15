@@ -41,20 +41,24 @@
         var countMale= 0;
         var countFemale = 0;
         var ages = 0;
-        var currentYear = new Date().getFullYear()
+        var currentYear = new Date().getFullYear();
 
-        for(var i= 0; i < objArray.length; i++) {
-          ages += +objArray[i].year;
-          var midage = currentYear - (ages/objArray.length);
-            if(objArray[i].gender == "male") {
-            countMale++ ;
-          } else {
-            countFemale++ ;
+        function peopleInfo(arr) {
+          for(var i= 0; i < arr.length; i++) {
+            ages += +arr[i].year;
+            if(arr[i].gender == "male") {
+                countMale++ ;
+            } else {
+                countFemale++ ;
+            }
           }
+            return ages = currentYear - (ages/arr.length);
         }
 
+        peopleInfo(objArray);
+
         console.log(countMale > countFemale ? "Больше мужчин" : "Больше женщин" );
-        console.log("Средний возраст - " +midage+ " лет");
+        console.log("Средний возраст - " +ages+ " лет");
     </script>
   </body>
 </html>
