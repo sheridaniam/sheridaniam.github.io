@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 18</title>
+  </head>
+  <body>
+    <scrip>
+      function sortWords(str) {
+        var newArr = str.split(" ");
+        var sortArray=[];
+          for(var i= 0; i < newArr.length; i++) {
+            for(var j= 0; j < newArr[i].length; j++) {
+              if(!isNaN(newArr[i][j])) {
+                sortArray[i]= newArr[i][j];
+              }
+            }
+        }
+        sortArray.sort();
+        var result= [];
+        for(var i= 0; i < newArr.length; i++) {
+          for (var j= 0; j < sortArray.length; j++) {
+            if(newArr[i].includes(x[j])) {
+              result[j]= newArr[i];
+            }
+          }
+        }
+      return console.log(result.join(" "));
+      }
+
+
+sortWords('A3lice 2Bob Er1nst') // 'Er1nst 2Bob A3lice';
+sortWords('2Fiona Ig7or J1amila B3ob Ali5ce') // 'J1amila 2Fiona B3ob A3lice Ig7or';
+sortWords('Tes1t') // 'Tes1t';
+    </script>
+  </body>
+</html>
