@@ -12,6 +12,25 @@
 
       // массив [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1] преобразуется в [4,7,2,4]
       // массив [0,0,1,1,1,1,0,1,1,1] преобразуется в [2,4,1,3]
+         
+         var arr01 = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1];
+         var arr02 = [0,0,1,1,1,1,0,1,1,1];
+         //var newArr = [];
+
+         function compress(x) {
+            var newArr = [];
+            var count =1 ;
+            for(var i= 0; i < x.length; i++) {
+                if(x[i]===x[i+1]) {
+                    newArr[i]= count++;
+                } else {
+                    newArr[i]= count;
+                }
+            }
+            return newArr;
+         }
+
+         compress(arr01);
     </script>
 </body>
 </html
