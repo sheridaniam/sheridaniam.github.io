@@ -7,36 +7,36 @@
   <body>
     <script>
       var objArray = [];
-        objArray[0]= {
+         {
           name: "Tom",
           gender: "male",
-          year: "2012"
-        }
-        objArray[1]= {
+          year: 2012
+         }
+         {
           name: "Jerry",
           gender: "male",
-          year: "2000"
-        }
-        objArray[2]= {
+          year: 2000
+         }
+         {
           name: "Ariel",
           gender: "female",
-          year: "1993"
-        }
-        objArray[3]= {
+          year: 1993
+         }
+         {
           name: "Aurora",
           gender: "female",
-          year: "1998"
-        }
-        objArray[4]= {
+          year: 1998
+          }
+          {
           name: "Shrek",
           gender: "male",
-          year: "2001"
-        }
-        objArray[5]= {
+          year: 2001
+          }
+          {
           name: "Aladdin",
           gender: "male",
-          year: "1993"
-        }
+          year: 1993
+          }
 
         var countMale= 0;
         var countFemale = 0;
@@ -45,7 +45,7 @@
 
         function peopleInfo(arr) {
           for(var i= 0; i < arr.length; i++) {
-            ages += +arr[i].year;
+            ages += arr[i].year;
             if(arr[i].gender == "male") {
                 countMale++ ;
             } else {
