@@ -32,27 +32,38 @@
           year: 1993}
        ];   
 
-        var countMale= 0;
-        var countFemale = 0;
-        var ages = 0;
-        var currentYear = new Date().getFullYear();
-
-        function peopleInfo(arr) {
-          for(var i= 0; i < arr.length; i++) {
-            ages += arr[i].year;
-            if(arr[i].gender == "male") {
-                countMale++ ;
-            } else {
-                countFemale++ ;
+        function calcAverageAge(arrayOfAges) {
+          var totalAge= 0;
+          var currentYear = new Date().getFullYear();
+            for(var i= 0; i < arrayOfAges.length; i++) {
+              totalAge += (currentYear - arrayOfAges[i].year);
             }
-          }
-            return ages = currentYear - (ages/arr.length);
+          return (totalAge/arrayOfAges.length);
         }
 
-        peopleInfo(objArray);
+        calcAverageAge(objArray);
+        console.log(calcAverageAge(objArray));
 
-        console.log(countMale > countFemale ? "Больше мужчин" : "Больше женщин" );
-        console.log("Средний возраст - " +ages+ " лет");
+        function caclGender(arrayOfGender) {
+          var male= 0;
+          for(var i= 0; i < arrayOfGender.length; i++) {
+            if(arrayOfGender[i].gender == "male") {
+                male++ ;
+            }
+          }
+          var female= arrayOfGender.length - male;
+          var genderCount;
+            if (male > female) {
+               genderCount = "Больше мужчин";
+            } else if (female < male) {
+                genderCount = "Больше женщин";
+            } else {
+              genderCount = "Количества мужчин и женщин равны"
+            }
+            return genderCount
+        }
+        caclGender(objArray);
+        console.log(caclGender(objArray));
     </script>
   </body>
 </html>
