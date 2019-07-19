@@ -6,7 +6,7 @@
   </head>
   <body>
     <script>
-      function sortWords(str) {
+      /*function sortWords(str) {
         var newArr = str.split(" ");
         var sortArray=[];
           for(var i= 0; i < newArr.length; i++) {
@@ -26,12 +26,41 @@
           }
         }
       return console.log(result.join(" "));
-      }
-
-
+      }*/
+      
       sortWords('A3lice 2Bob Er1nst') // 'Er1nst 2Bob A3lice';
       sortWords('2Fiona Ig7or J1amila B3ob Ali5ce') // 'J1amila 2Fiona B3ob A3lice Ig7or';
       sortWords('Tes1t') // 'Tes1t';
+         
+      // NEW   только не говрите что опять не правильно  :((
+      
+        function sortWords(str)  {
+            var newArr = str.split(" ");
+            var sortArray=[].sort();
+
+            newArr.map(function(item) {
+                for(var i= 0; i < item.length; i++){
+                if(!isNaN(item[i])) {
+                    sortArray.push(item[i]);
+                    }
+                }    
+            })
+    
+            newArr.filter(function(check) {
+                for(var j= 0; j < sortArray.length; j++) {
+                    if(check.includes(sortArray[j])) {
+                        sortArray[j]= check;
+                    }
+                }
+                
+            })
+            return sortArray.join();
+        } 
+
+    console.log(sortWords("A3lice 2Bob Er1nst"));
+    console.log(sortWords("2Fiona Ig7or J1amila B3ob Ali5ce"));
+    console.log(sortWords("Tes1t"));      
+
     </script>
   </body>
 </html>
