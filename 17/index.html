@@ -44,7 +44,7 @@
         calcAverageAge(objArray);
         console.log(calcAverageAge(objArray));
 
-        function caclGender(arrayOfGender) {
+        function resultGender(arrayOfGender) {
           var male= 0;
           for(var i= 0; i < arrayOfGender.length; i++) {
             if(arrayOfGender[i].gender == "male") {
@@ -52,18 +52,16 @@
             }
           }
           var female= arrayOfGender.length - male;
-          var genderCount;
             if (male > female) {
-               genderCount = "Больше мужчин";
+              console.log("Больше мужчин");
             } else if (female < male) {
-                genderCount = "Больше женщин";
+              console.log("Больше женщин");
             } else {
-              genderCount = "Количества мужчин и женщин равны"
+              console.log ("Количества мужчин и женщин равны")
             }
-            return genderCount
-        }
-        caclGender(objArray);
-        console.log(caclGender(objArray));
+         }
+        resultGender(objArray);
+        
     </script>
   </body>
 </html>
