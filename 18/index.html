@@ -36,7 +36,7 @@
       
         function sortWords(str)  {
             var newArr = str.split(" ");
-            var sortArray=[].sort();
+            var sortArray=[];
 
             newArr.map(function(item) {
                 for(var i= 0; i < item.length; i++){
@@ -45,7 +45,7 @@
                     }
                 }    
             })
-    
+            var sortArray = sortArray.sort();
             newArr.filter(function(check) {
                 for(var j= 0; j < sortArray.length; j++) {
                     if(check.includes(sortArray[j])) {
